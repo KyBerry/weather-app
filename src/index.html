@@ -3,10 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>webpack starterkit</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+  <title>Weather App</title>
 </head>
-<body>
-  <h1>webpack starter</h1>
-  <p>✨ A lightweight foundation for your next webpack based frontend project.</p>
+<body style="background: #a7adba; color:black;">
+  <div class="container">
+    <form id="weather-form">
+      <h1 style="color:black;">Get The Weather</h1>
+      <input id="search-input" type="text" class="u-full-width" placeholder="city name, state">
+      <input class="button-primary" id="submit" type="submit" value="Get Weather">
+    </form>
+    <div style="color:black; display: none;" id="output-weather">
+      <label for="temp">Temperature</label>
+      <input id="temp" type="text" disabled>
+      <label for="conditions">Conditions</label>
+      <input id="conditions" type="text" disabled>
+      <label for="sunrise">Sunrise</label>
+      <input id="sunrise" type="text" disabled>
+      <label for="sunset">Sunset</label>
+      <input id="sunset" type="text" disabled>
+    </div>
+  </div>
 </body>
 </html>
